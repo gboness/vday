@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0b1522;
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* heart */
+@keyframes spinY {
+    0% {
+      transform: rotatey(0deg) rotate(-45deg);
+    }
+    100% {
+      transform: rotatey(360deg) rotate(-45deg);
+    }
+  }
+
+  .heart-container {
+    perspective: 600px; /* Adds perspective for a more realistic 3D effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
+  
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #f20044;
+    transform: rotate(-45deg);
+    margin: 100px auto;
+    animation: spinY 2s infinite linear;
+    transform-style: preserve-3d; /* Enables 3D effect */
+    box-shadow: -10px 10px 90px #f20044;
+
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #f20044;
+    border-radius: 50%;
+    box-shadow: -10px 10px 90px #f20044;
+
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: 50px;
+    top: 0;
+  }
+  
+  
+.main-content {
+    text-align: center;
+}
+
+.note {
+    color: pink;
+}
+
+.btn-1, .btn-2 {
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.btn-1 {
+    background-color: lightgreen;
+}
+
+.btn-2 {
+    background-color: lightcoral;
+}
