@@ -79,10 +79,12 @@ body {
 img {
   height: 500px;
   padding: 25px;
+  color: aqua;
 }
 
 .images {
   display: none;
+  color: white;
 }
 
 #toggle:checked ~ .images {
@@ -92,7 +94,7 @@ img {
 label {
   display: inline-block;
   padding: 10px 20px;
-  background: purple;
+  background: #563da8;
   color: white;
   cursor: pointer;
   border-radius: 5px;
