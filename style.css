@@ -74,16 +74,26 @@ body {
     color: pink;
 }
 
-.btn-1, .btn-2 {
-    width: 90px;
-    height: 40px;
-    border-radius: 15px;
+
+/* images section */
+img {
+  height: 500px;
+  padding: 25px;
 }
 
-.btn-1 {
-    background-color: lightgreen;
+.images {
+  display: none;
 }
 
-.btn-2 {
-    background-color: lightcoral;
+#toggle:checked ~ .images {
+  display: block; 
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
