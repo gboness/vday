@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center; /* Horizontally centers content */
     align-items: center; /* Vertically centers content */
-    height: 100vh; /* Full height of the viewport */
+    max-height: 1000vh; /* Full height of the viewport */
     margin: 0; /* Remove default margin */
 }
 
@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-top: 200px;
 
   }
   
@@ -68,6 +68,7 @@ body {
   
 .main-content {
     text-align: center;
+
 }
 
 .note {
@@ -88,8 +89,9 @@ img {
 }
 
 #toggle:checked ~ .images {
-  display: block; 
+  display: block;
 }
+
 
 label {
   display: inline-block;
@@ -98,4 +100,5 @@ label {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+
 }
